@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Checkout</title>
+</head>
+
+<body>
+    <header>
+        <p class="topic">Checkout</p>
+    </header>
+    <div class="container">
+        <div class="information">
+            <div class="content">
+                <p class="contact-topic">Contract information</p>
+                <form class="contactform">
+                    <label for="email" class="contact-info">E-mail</label><br>
+                    <input type="email" id="email" name="email" placeholder="Enter your email..."><br><br>
+                    <label for="phone" class="contact-info">Phone</label><br>
+                    <input type="text" id="phone" name="phone" placeholder="Enter your phone...">
+                </form>
+                <p class="shopaddress-topic">Shipping address</p>
+                <form class="shopaddressform">
+                    <label for="fullname" class="shopaddress-info">Full name</label><br>
+                    <input type="text" id="fullname" name="fullname" value="Rodney Cotton"><br><br>
+                    <label for="address" class="shopaddress-info">Address</label><br>
+                    <input type="text" id="address" name="address" placeholder="Your address.."><br><br>
+                    <label for="city" class="shopaddress-info">City</label><br>
+                    <input type="text" id="city" name="city" placeholder="Your city.."><br><br>
+
+                    <div class="two-col">
+                        <div class="country-form">
+                            <label for="country" class="shopaddress-info">Country</label><br>
+                            <select id="country" name="country" class="country-info">
+                                <option value="" class="shopaddress-info">Your country..</option>
+                                <option value="Thailand" class="shopaddress-info">Thailand</option>
+                            </select><br><br>
+                        </div>
+                        <div class="post-form">
+                            <label for="postalcode" class="shopaddress-info">Postal Code</label><br>
+                            <input type="text" id="postalcode" name="postalcode"
+                                placeholder="Your postal code.."><br><br>
+                        </div>
+                    </div>
+                    <input type="checkbox" id="saveaddress" name="saveaddress">
+                    <label for="saveaddress" class="save-address">Save this information for next time</label>
+                </form>
+                <div class="button">
+                    <button type="submit" class="buttonstyle">
+                        <p class="textbut">Continue</p>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="basket">
+            <div class="order">
+                <div class="product">
+                    <div class="product-image">
+                        <img src="/images/photo1.png" alt="product1">
+                    </div>
+                    <div class="detail">
+                        <p class="product-name">Vintage Backbag</p><br><br>
+                        <p class="price">$54.99&nbsp;&nbsp;<span class="old-price">$94.99</span></p>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="product-image">
+                        <img src="/images/photo2.png" alt="product1">
+                    </div>
+                    <div class="detail">
+                        <p class="product-name">Levi Shoes</p><br><br>
+                        <p class="price">$74.99&nbsp;&nbsp;<span class="old-price">$124.99</span></p>
+                    </div>
+                </div>
+                <div class="shipping">
+                    <p class="sum">Shipping<span class="total">$19</span></p>
+                </div>
+                <div class="total-money">
+                    <p class="sum">Total<span class="total">$148.98</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- <footer>
+        <p class="credit">created by <a class="username" href="www.google.com">username</a> - devChallenges.io</p>
+    </footer> -->
+</body>
+
+</html>
