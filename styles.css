@@ -15,10 +15,12 @@
   /* height: 100vh; */
   padding-left: 15%;
   padding-right: 15%;
+  padding-top: 2%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap-reverse;
   justify-content: space-between;
+  /* height: 85vh; */
 }
 .content {
   /* background-color: orange; */
@@ -50,13 +52,34 @@
   line-height: 15px;
   color: #4f4f4f;
 }
+.material-icons{
+  position: absolute;
+  color: #828282;
+  width: 50px;
+  text-align: center;
+  height: 60px;
+  font-size: 30px;
+  padding-top: 13px;
+}
+#email,#phone,#fullname,#address,#city,#country,#postalcode{
+  padding-left: 50px;
+}
+#public,#post{
+  padding-top: 10px;
+}
 input[type="email"],
 [type="text"],
-select {
+select{
   border: 1px solid #828282;
   width: 100%;
   height: 60px;
   border-radius: 12px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #333333;
 }
 #postalcode {
   border: 1px solid #828282;
@@ -227,8 +250,8 @@ input[value="Rodney Cotton"] {
   text-align: center;
   color: #bdbdbd;
 }
-.material-icons{
-  color: grey;
+.credit{
+  padding-top: 7%;
 }
 @media (max-width: 1110px) {
   .information {
@@ -250,5 +273,18 @@ input[value="Rodney Cotton"] {
   }
   .product {
     width: 100%;
+  }
+  .credit{
+    padding-top: 10px;
+    min-width: 375px;
+    text-align: center;
+    width: 100%;
+  }
+  ::placeholder {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
   }
 }
