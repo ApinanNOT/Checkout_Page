@@ -19,32 +19,53 @@
             <div class="content">
                 <p class="contact-topic">Contract information</p>
                 <form class="contactform">
-                    <label for="email" class="contact-info">E-mail</label><br>
-                    <input type="email" id="email" name="email" placeholder="Enter your email..."><br><br>
-                    <label for="phone" class="contact-info">Phone</label><br>
-                    <input type="text" id="phone" name="phone" placeholder="Enter your phone...">
+                    <div class="input-email">
+                        <label for="email" class="contact-info">E-mail</label><br>
+                        <i class="material-icons" id="icon-size">mail</i>
+                        <input type="email" id="email" name="email" placeholder="Enter your email..."><br><br>
+                    </div>
+                    <div class="input-phone">
+                        <label for="phone" class="contact-info">Phone</label><br>
+                        <i class="material-icons" id="icon-size">phone</i>
+                        <input type="text" id="phone" name="phone" placeholder="Enter your phone...">
+                    </div>
                 </form>
                 <p class="shopaddress-topic">Shipping address</p>
                 <form class="shopaddressform">
-                    <label for="fullname" class="shopaddress-info">Full name</label><br>
-                    <input type="text" id="fullname" name="fullname" value="Rodney Cotton"><br><br>
-                    <label for="address" class="shopaddress-info">Address</label><br>
-                    <input type="text" id="address" name="address" placeholder="Your address.."><br><br>
-                    <label for="city" class="shopaddress-info">City</label><br>
-                    <input type="text" id="city" name="city" placeholder="Your city.."><br><br>
+                    <div class="input-fullname">
+                        <label for="fullname" class="shopaddress-info">Full name</label><br>
+                        <i class="material-icons">account_circle</i>
+                        <input type="text" id="fullname" name="fullname" value="Rodney Cotton"><br><br>
+                    </div>
+                    <div class="input-address">
+                        <label for="address" class="shopaddress-info">Address</label><br>
+                        <i class="material-icons">home</i>
+                        <input type="text" id="address" name="address" placeholder="Your address.."><br><br>
+                    </div>
+                    <div class="input-city">
+                        <label for="city" class="shopaddress-info">City</label><br>
+                        <i class="material-icons">location_city</i>
+                        <input type="text" id="city" name="city" placeholder="Your city.."><br><br>
+                    </div>
 
                     <div class="two-col">
-                        <div class="country-form">
-                            <label for="country" class="shopaddress-info">Country</label><br>
-                            <select id="country" name="country" class="country-info">
-                                <option value="" class="shopaddress-info">Your country..</option>
-                                <option value="Thailand" class="shopaddress-info">Thailand</option>
-                            </select><br><br>
+                        <div class="input-country">
+                            <div class="country-form">
+                                <label for="country" class="shopaddress-info">Country</label><br>
+                                <i class="material-icons" id="public">public</i>
+                                <select id="country" name="country" class="country-info">
+                                    <option value="" class="shopaddress-info">Your country..</option>
+                                    <option value="Thailand" class="shopaddress-info">Thailand</option>
+                                </select><br><br>
+                            </div>
                         </div>
-                        <div class="post-form">
-                            <label for="postalcode" class="shopaddress-info">Postal Code</label><br>
-                            <input type="text" id="postalcode" name="postalcode"
-                                placeholder="Your postal code.."><br><br>
+                        <div class="input-post">
+                            <div class="post-form">
+                                <label for="postalcode" class="shopaddress-info">Postal Code</label><br>
+                                <i class="material-icons" id="post">markunread_mailbox</i>
+                                <input type="text" id="postalcode" name="postalcode"
+                                    placeholder="Your postal code.."><br><br>
+                            </div>
                         </div>
                     </div>
                     <input type="checkbox" id="saveaddress" name="saveaddress">
@@ -87,9 +108,9 @@
         </div>
     </div>
     </div>
-    <!-- <footer>
+    <footer>
         <p class="credit">created by <a class="username" href="www.google.com">username</a> - devChallenges.io</p>
-    </footer> -->
+    </footer>
 </body>
 
 </html>
